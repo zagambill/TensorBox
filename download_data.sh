@@ -7,13 +7,13 @@ cd $DIR
 echo "Downloading..."
 
 mkdir -p data && cd data
-wget --continue http://russellsstewart.com/s/tensorbox/inception_v1.ckpt
-wget --continue http://download.tensorflow.org/models/resnet_v1_101_2016_08_28.tar.gz
+wget --continue https://citrineinformatics.box.com/s/wjzhi0bvchyhlwqql18ugf254kmv9s35
+wget --continue https://citrineinformatics.box.com/s/tl8nhrqdww0y3p74230k57esuu15ph43
 mkdir -p overfeat_rezoom && cd overfeat_rezoom
-wget --continue http://russellsstewart.com/s/tensorbox/overfeat_rezoom/save.ckpt-150000v2
+wget --continue https://citrineinformatics.box.com/s/53b4isa4hcvuzwgewvbnpxe6dakdpykr
 cd ..
 echo "Extracting..."
-tar xf resnet_v1_101_2016_08_28.tar.gz
+tar xf resnet_v1_101.tar.gz
 
 if [[ "$1" == '--travis_tiny_data' ]]; then
     wget --continue http://russellsstewart.com/s/brainwash_tiny.tar.gz
