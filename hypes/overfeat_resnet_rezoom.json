@@ -6,7 +6,7 @@
     },
     "logging": {
         "display_iter": 50,
-        "save_iter": 10000
+        "save_iter": 1000
     },
     "solver": {
         "opt": "RMS",
