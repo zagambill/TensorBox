@@ -1,12 +1,12 @@
 {
     "data": {
         "train_idl": "./data/figures/train_boxes.json",
-        "test_idl": "./data/figures/test_boxes.json",
+        "test_idl": "./data/figures/train_boxes.json",
         "truncate_data": false
     },
     "logging": {
         "display_iter": 50,
-        "save_iter": 1000
+        "save_iter": 10000
     },
     "solver": {
         "opt": "RMS",
